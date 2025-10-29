@@ -16,6 +16,6 @@ $ /usr/bin/mc admin policy attach s3service readwrite --user "$${ACCESS_KEY}";
 
 ```
 
-[!Caution]
+![Caution]
 
 > I am using NodeJS SDK for AWS S3 `aws-sdk/s3-client` and initializing the `S3Client` imported from the library. Since native AWS S3 endpoints are in the form `https://<BUCKET_NAME>.s3.amazonaws.com` but, **MinIO** uses the format `https://s3.amazonaws.com/<BUCKET_NAME>`. So adding the property `forcePathStyle=true` is a must in order for the setup to work
